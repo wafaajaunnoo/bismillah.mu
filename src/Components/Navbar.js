@@ -1,6 +1,12 @@
+import { Component } from "react";
 import "./styles/Navbar.css";
 
-function Navbar(){
+class Navbar extends Component{
+    state={ clicked: false };
+    handleClick = () =>{
+        this.setState({clicked:!this.state.clicked})
+    }
+    render(){
     return(
         <>
         <nav>
@@ -8,7 +14,7 @@ function Navbar(){
                 <img src="/favicon.png" alt="favicon"/>
             </a>
             <div>
-                <ul id="navbar">
+                <ul id="navbar" className= {this.state.clicked ? "#navbar active" : "#navbar"}>
                     <li>
                         <a href="about.html">About Us</a>
                     </li>
@@ -23,9 +29,13 @@ function Navbar(){
                     </li>
                 </ul>
             </div>
+            <div id="mobileVersion" onClick={this.handleClick}>
+                <i id="bar" className={this.state.clicked ? "fas fa-times": "fas fa-bars"}></i>
+                </div> 
         </nav>
         </>
     )
+}
 }
 
 export default Navbar;
