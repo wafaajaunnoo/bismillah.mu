@@ -1,0 +1,59 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "title": "iphone 13",
+        "description": "an apple mobile",
+        "images": "https://www.apple.com/newsroom/images/2023/09/apple-unveils-iphone-15-pro-and-iphone-15-pro-max/article/Apple-iPhone-15-Pro-lineup-hero-230912_Full-Bleed-Image.jpg.large.jpg"
+      },
+      {
+        "id": 2,
+        "title": "iphone 14",
+        "description": "another iphone",
+        "images": ""
+      },
+      {
+        "id": 3,
+        "title": "iphone 14",
+        "description": "another iphone",
+        "images": ""
+      },
+      {
+        "id": 1,
+        "title": "iphone 13",
+        "description": "an apple mobile",
+        "images": "https://www.apple.com/newsroom/images/2023/09/apple-unveils-iphone-15-pro-and-iphone-15-pro-max/article/Apple-iPhone-15-Pro-lineup-hero-230912_Full-Bleed-Image.jpg.large.jpg"
+      },
+      {
+        "id": 2,
+        "title": "iphone 14",
+        "description": "another iphone",
+        "images": ""
+      },
+      {
+        "id": 3,
+        "title": "iphone 14",
+        "description": "another iphone",
+        "images": ""
+      },
+      {
+        "id": 1,
+        "title": "iphone 13",
+        "description": "an apple mobile",
+        "images": "https://www.apple.com/newsroom/images/2023/09/apple-unveils-iphone-15-pro-and-iphone-15-pro-max/article/Apple-iPhone-15-Pro-lineup-hero-230912_Full-Bleed-Image.jpg.large.jpg"
+      },
+      {
+        "id": 2,
+        "title": "iphone 14",
+        "description": "another iphone",
+        "images": ""
+      },
+      {
+        "id": 3,
+        "title": "iphone 14",
+        "description": "another iphone",
+        "images": ""
+      }
+    ]
+  }
+  
