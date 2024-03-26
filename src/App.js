@@ -5,10 +5,11 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import Footer from './Components/footer'
 import Home from './Components/Home'
 import HalaalEats from './Components/HalaalEats';
 import Musalla from './Components/Musalla';
-import Contact from './Components/Contact'
+import Contact from './Components/Contact';
 
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
           <Route path='/contact' element= {<Contact />} />
         </Routes>
       </BrowserRouter>
+      
+     <Footer/>
     </div>
   );
 }
