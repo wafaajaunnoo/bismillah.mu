@@ -33,7 +33,7 @@
   .product-card {
     width: calc(33.33% - 20px); 
     margin-bottom: 20px; 
-    background-color: red;
+    background-color: #F8FFFA;
     padding: 20px; 
     box-sizing: border-box; 
   }
