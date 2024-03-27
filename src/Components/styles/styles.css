@@ -1,8 +1,124 @@
+/*styles for Navbar.js*/
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+}
+
+#navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li{
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a{
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #000;
+  transition: 0.3s ease-in-out;
+}
+
+#navbar li a:hover{
+  color: #019949;
+}
+
+#navbar li a:hover::after{
+  content: "";
+  width: 70%;
+  height: 2px;
+  background-color: #019949;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+#mobileVersion {
+  display: none;
+}
+
+#mobileVersion i{
+  color: #039a4a;
+  align-items: center;
+}
+
+@media screen and (max-width:769px) {
+  #navbar{
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      position: fixed;
+      top: 90px;
+      right: -300px;
+      width: 300px;
+      height: 100vh;
+      background-color: #44B678;
+      box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+      padding: 40px 0 0 10px;
+      transition: 0.3s ease-in-out;
+  }
+
+  #navbar.active{
+      right: 0px;
+  }
+
+  #mobileVersion {
+      display: block;
+  }
+  
+  #navbar li{
+      margin-bottom: 25px;
+  }
+  
+  #navbar i{
+      font-size: 24px;
+      cursor: pointer;
+  }
+}
+
+/*Styles for Home.js*/
+.aboutSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column; 
+  width: 30%;
+  margin: auto;
+}
+
+.aboutSection input[type="submit"] {
+background-color: #103732;
+padding: 1rem;
+color: #fff;
+border: none;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+
+.aboutSection input[type="submit"]:hover {
+background-color: #019949;
+}
+
 .popup-overlay {
     position: fixed;
-    left: 35%;
-    width: 30%;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,6 +127,7 @@
   .popup {
     background-color: white;
     padding: 20px;
+    border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
@@ -28,12 +145,11 @@
   }
   
   .product-card {
-    width: calc(33.33% - 70px); 
+    width: calc(33.33% - 20px); 
     margin-bottom: 20px; 
-    background-color: #BFE1C5;
+    background-color: #F8FFFA;
     padding: 20px; 
     box-sizing: border-box; 
-    border-radius: 15px;
   }
   
   .product-image img {
@@ -49,3 +165,4 @@
     margin-bottom: 10px; 
   }
   
+/*Styles for footer.js*/
