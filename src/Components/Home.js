@@ -1,8 +1,8 @@
 import React from 'react'
 import AboutSection from './aboutSection'
 import Footer from './footer'
-import './styles/aboutSection.css';
-import './styles/footer.css';
+import './styles.css';
+import './styles.css';
 
 const Home = () => {
   return (

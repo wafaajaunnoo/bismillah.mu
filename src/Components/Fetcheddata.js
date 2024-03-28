@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './styles/styles.css'; 
+import './styles.css'; 
 
 function Fetcheddata(props) {
   const { data } = props;
