@@ -166,3 +166,25 @@ background-color: #019949;
   }
   
 /*Styles for footer.js*/
+
+
+
+@media (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 1rem 1rem;
+  }
+
+  .product-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
