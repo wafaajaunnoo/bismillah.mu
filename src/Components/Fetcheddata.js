@@ -12,6 +12,11 @@ function Fetcheddata(props) {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    const okBtnElement = document.getElementById('ok-btn');
+    showPopup && okBtnElement?.focus();
+  }, [showPopup]);
+
   const closePopup = () => {
     setShowPopup(false);
   };
@@ -30,7 +35,7 @@ function Fetcheddata(props) {
         <div className="popup-overlay" onClick={closePopup}>
           <div className="popup">
             <p>In solidarity with Palestine, we've removed pro-genocide food outlets from our list.</p>
-            <button onClick={closePopup}>OK</button>
+            <button onClick={closePopup} id='ok-btn'>OK</button>
           </div>
         </div>
       )}
