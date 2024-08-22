@@ -1,11 +1,16 @@
-import React, { useState } from 'react';
-import './styles.css'; 
+import React, { useEffect, useState } from 'react';
+import './styles.css';
 
 function Fetcheddata(props) {
   const { data } = props;
-  const [showPopup, setShowPopup] = useState(true);
+  const [showPopup, setShowPopup] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 6;
+
+  useEffect(() => {
+    const timer = setTimeout(() => setShowPopup(true), 300);
+    return () => clearTimeout(timer);
+  }, []);
 
   const closePopup = () => {
     setShowPopup(false);
@@ -22,7 +27,7 @@ function Fetcheddata(props) {
   return (
     <>
       {showPopup && (
-        <div className="popup-overlay">
+        <div className="popup-overlay" onClick={closePopup}>
           <div className="popup">
             <p>In solidarity with Palestine, we've removed pro-genocide food outlets from our list.</p>
             <button onClick={closePopup}>OK</button>
@@ -32,7 +37,7 @@ function Fetcheddata(props) {
 
       <h1>Explore Halal eateries.</h1>
       <h3>This is our curated selection of Halal-certified food spots and Muslim-owned food businesses.</h3>
-      
+
       <div className="container">
         {currentProducts.map((product) => (
           <div className="product-card" key={product.id}>

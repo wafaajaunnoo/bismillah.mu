@@ -1,33 +1,6 @@
-import './styles/App.css';
-import Navbar from './Components/Navbar';
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from "react-router-dom";
-import Footer from './Components/footer'
-import Home from './Components/Home'
-import HalaalEats from './Components/HalaalEats';
-import Musalla from './Components/Musalla';
-import Contact from './Components/Contact';
+import "./styles/App.css";
+import BismillahMu from "./Components/BismillahMu";
 
-
-function App() {
-  return (
-    <div className="App">
-      <BrowserRouter>
-        <Navbar/>
-        <Routes>
-          <Route path='/home' element= {<Home />} />
-          <Route path='/halaaleats' element= {<HalaalEats />} />
-          <Route path='/musalla' element= {<Musalla />} />
-          <Route path='/contact' element= {<Contact />} />
-        </Routes>
-      </BrowserRouter>
-      
-     <Footer/>
-    </div>
-  );
-}
+const App = () => <BismillahMu />;
 
 export default App;
