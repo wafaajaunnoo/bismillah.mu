@@ -29,6 +29,10 @@ function Fetcheddata(props) {
     setCurrentPage(pageNumber);
   };
 
+  const viewInMaps = (location) => {
+    location && window.open(location, '_blank');
+  };
+
   return (
     <>
       {showPopup && (
@@ -52,6 +56,7 @@ function Fetcheddata(props) {
             <div className="product-details mt-4">
               <h2 className="mb-2">{product.title}</h2>
               <p>{product.description}</p>
+              <button id='location-btn' onClick={() => viewInMaps(product.location)} aria-label='View Location'>View Location</button>
             </div>
           </div>
         ))}
